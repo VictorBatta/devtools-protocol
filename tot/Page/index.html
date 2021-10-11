@@ -335,11 +335,6 @@
       </div>
       
       <div class="toc-link">
-        <a class="monospace" href="#method-setProduceCompilationCache"><span class="domain-dot">Page.</span>setProduceCompilationCache</a>
-        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
-      </div>
-      
-      <div class="toc-link">
         <a class="monospace" href="#method-setWebLifecycleState"><span class="domain-dot">Page.</span>setWebLifecycleState</a>
         <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
       </div>
@@ -2918,11 +2913,8 @@ Only returns values if the feature flag &#39;WebAppEnableManifestId&#39; is enab
         
       <div class="details-description">
         <p>Requests backend to produce compilation cache for the specified scripts.
-Unlike setProduceCompilationCache, this allows client to only produce cache
-for specific scripts. <code>scripts</code> are appeneded to the list of scripts
-for which the cache for would produced. Disabling compilation cache with
-<code>setProduceCompilationCache</code> would reset all pending cache requests.
-The list may also be reset during page navigation.
+<code>scripts</code> are appeneded to the list of scripts for which the cache
+would be produced. The list may be reset during page navigation.
 When script with a matching URL is encountered, the cache is optionally
 produced upon backend discretion, based on internal heuristics.
 See also: <code>Page.compilationCacheProduced</code>.</p>
@@ -3352,47 +3344,6 @@ Instead, a protocol event <code>Page.fileChooserOpened</code> is emitted.</p>
       <div class="details-description">
         <p>If true, starts emitting lifecycle events.</p>
 
-        
-      </div>
-    
-          
-        </dd>
-      
-      </dl>
-    
-        
-      </div>
-    
-      <div class="details">
-        <h4 class="details-name monospace" id="method-setProduceCompilationCache">
-          <span class="domain-dot">Page.</span>setProduceCompilationCache
-          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
-          <a href="#method-setProduceCompilationCache"
-             class="permalink"
-             data-slug="Page.setProduceCompilationCache"
-             title="Double click to copy markdown-formatted URL">#</a>
-        </h4>
-        
-      <div class="details-description">
-        <p>Forces compilation cache to be generated for every subresource script.
-See also: <code>Page.produceCompilationCache</code>.</p>
-
-        
-      </div>
-    
-        
-        
-      <h5 class="properties-name">parameters</h5>
-      <dl class="properties-container">
-        
-        <dt class="param-name monospace ">
-          enabled
-        </dt>
-        <dd>
-          <span class="param-type">boolean</span>
-          
-      <div class="details-description">
-        
         
       </div>
     
