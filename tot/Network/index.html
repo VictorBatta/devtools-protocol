@@ -3385,6 +3385,23 @@ continueInterceptedRequest call.</p>
           
         </dd>
       
+        <dt class="param-name monospace ">
+          redirectHasExtraInfo
+        </dt>
+        <dd>
+          <span class="param-type">boolean</span>
+          
+      <div class="details-description">
+        <p>In the case that redirectResponse is populated, this flag indicates whether
+requestWillBeSentExtraInfo and responseReceivedExtraInfo events will be or were emitted
+for the request which was just redirected.</p>
+
+        
+      </div>
+    
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+        </dd>
+      
         <dt class="param-name monospace optional">
           redirectResponse
         </dt>
@@ -3544,6 +3561,22 @@ continueInterceptedRequest call.</p>
       </div>
     
           
+        </dd>
+      
+        <dt class="param-name monospace ">
+          hasExtraInfo
+        </dt>
+        <dd>
+          <span class="param-type">boolean</span>
+          
+      <div class="details-description">
+        <p>Indicates whether requestWillBeSentExtraInfo and responseReceivedExtraInfo events will be
+or were emitted for this request.</p>
+
+        
+      </div>
+    
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
         </dd>
       
         <dt class="param-name monospace optional">
