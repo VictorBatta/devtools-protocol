@@ -197,6 +197,11 @@
       </div>
       
       <div class="toc-link">
+        <a class="monospace" href="#type-DeprecationIssueDetails"><span class="domain-dot">Audits.</span>DeprecationIssueDetails</a>
+        
+      </div>
+      
+      <div class="toc-link">
         <a class="monospace" href="#type-GenericIssueDetails"><span class="domain-dot">Audits.</span>GenericIssueDetails</a>
         
       </div>
@@ -1266,6 +1271,83 @@ CORS RFC1918 enforcement.</p>
       </div>
     
       <div class="details">
+        <h4 class="details-name monospace" id="type-DeprecationIssueDetails">
+          <span class="domain-dot">Audits.</span>DeprecationIssueDetails
+          
+          <a href="#type-DeprecationIssueDetails"
+             class="permalink"
+             data-slug="Audits.DeprecationIssueDetails"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>This issue tracks information needed to print a deprecation message.
+The formatting is inherited from the old console.log version, see more at:
+<a href="https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/frame/deprecation.cc">https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/frame/deprecation.cc</a>
+TODO(crbug.com/1264960): Re-work format to add i18n support per:
+<a href="https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/devtools_protocol/README.md">https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/devtools_protocol/README.md</a></p>
+
+        
+      </div>
+    
+        <p class="type-type">Type: <strong>object</strong></p>
+        
+      <h5 class="properties-name">properties</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace optional">
+          affectedFrame
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-AffectedFrame class="param-type">AffectedFrame</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          sourceCodeLocation
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-SourceCodeLocation class="param-type">SourceCodeLocation</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace optional">
+          message
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>The content of the deprecation issue (this won&#39;t be translated),
+e.g. &quot;window.inefficientLegacyStorageMethod will be removed in M97,
+around January 2022. Please use Web Storage or Indexed Database
+instead. This standard was abandoned in January, 1970. See
+<a href="https://www.chromestatus.com/feature/5684870116278272">https://www.chromestatus.com/feature/5684870116278272</a> for more details.&quot;</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      <div class="details">
         <h4 class="details-name monospace" id="type-GenericIssueDetails">
           <span class="domain-dot">Audits.</span>GenericIssueDetails
           
@@ -1542,7 +1624,7 @@ optional fields in InspectorIssueDetails to convey more specific
 information about the kind of issue.</p>
 
         
-      <div class="enum-container">Allowed Values: <code>SameSiteCookieIssue</code>, <code>MixedContentIssue</code>, <code>BlockedByResponseIssue</code>, <code>HeavyAdIssue</code>, <code>ContentSecurityPolicyIssue</code>, <code>SharedArrayBufferIssue</code>, <code>TrustedWebActivityIssue</code>, <code>LowTextContrastIssue</code>, <code>CorsIssue</code>, <code>AttributionReportingIssue</code>, <code>QuirksModeIssue</code>, <code>NavigatorUserAgentIssue</code>, <code>WasmCrossOriginModuleSharingIssue</code>, <code>GenericIssue</code></div>
+      <div class="enum-container">Allowed Values: <code>SameSiteCookieIssue</code>, <code>MixedContentIssue</code>, <code>BlockedByResponseIssue</code>, <code>HeavyAdIssue</code>, <code>ContentSecurityPolicyIssue</code>, <code>SharedArrayBufferIssue</code>, <code>TrustedWebActivityIssue</code>, <code>LowTextContrastIssue</code>, <code>CorsIssue</code>, <code>AttributionReportingIssue</code>, <code>QuirksModeIssue</code>, <code>NavigatorUserAgentIssue</code>, <code>WasmCrossOriginModuleSharingIssue</code>, <code>GenericIssue</code>, <code>DeprecationIssue</code></div>
     
       </div>
     
@@ -1761,6 +1843,20 @@ add a new optional field to this type.</p>
         </dt>
         <dd>
           <a href=/devtools-protocol/tot/Audits/#type-GenericIssueDetails class="param-type">GenericIssueDetails</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace optional">
+          deprecationIssueDetails
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-DeprecationIssueDetails class="param-type">DeprecationIssueDetails</a>
           
       <div class="details-description">
         
