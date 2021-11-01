@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Chrome DevTools Protocol - version tot" />
+    <meta name="description" content="Chrome DevTools Protocol - version tot - EventBreakpoints domain" />
   <link rel="icon" type="image/png" href="/devtools-protocol/images/logo.png" />
-    <title>Chrome DevTools Protocol - latest (tip-of-tree)</title>
+    <title>Chrome DevTools Protocol - EventBreakpoints domain</title>
 
   <meta name="theme-color" content="#303F9F" />
   <meta name="twitter:card" content="summary" />
@@ -13,7 +13,7 @@
   <meta name="twitter:creator" content="@chromedevtools" />
   <meta property="og:title" content="Chrome DevTools Protocol" />
   <meta property="og:image" content="https://developers.google.com/web/tools/images/chrome-devtools-16x9_720.png" />
-    <meta property="og:description" content="Chrome DevTools Protocol - version tot" />
+    <meta property="og:description" content="Chrome DevTools Protocol - version tot - EventBreakpoints domain" />
 
   <script type="module" src="/devtools-protocol/scripts/index.js"></script>
   <link href="/devtools-protocol/styles/protocol.css" rel="stylesheet">
@@ -105,20 +105,129 @@
       <cr-search-control base-url="/devtools-protocol/" protocol-search-index="/search_index/tot.json"></cr-search-control>
     </header>
     <section>
-      <div class="main-content-section ">
-        <p>The <strong>latest (tip-of-tree) protocol</strong> <a href="https://chromium.googlesource.com/chromium/src/+log/master/third_party/blink/public/devtools_protocol/browser_protocol.pdl">changes</a>
-<a href="https://chromium.googlesource.com/v8/v8.git/+log/master/include/js_protocol.pdl">frequently</a> and may break at any time.
-However it captures the full capabilities of the Protocol, whereas the stable release is a subset.
-There is no backwards compatibility support guaranteed for the capabilities it introduces.</p>
-<h5 browser>Latest <a
-   href="https://github.com/ChromeDevTools/devtools-protocol/blob/master/json/browser_protocol.json">browser_protocol.json</a> version updated:</h5>
-<code browser>Date:   2021-11-01 15:15:26 -0700
-</code>
-<h5 js>Latest <a
-   href="https://github.com/ChromeDevTools/devtools-protocol/blob/master/json/js_protocol.json">js_protocol.json</a> version updated:</h5>
-<code js>Date:   2021-09-30 08:28:28 -0700
-</code>
+      <div class="main-content-section domain">
+        
+    <div class="domain-section">
+      <div id="header">
+        <h2 class="heading">EventBreakpoints Domain</h2>
+        
+      <div class="details-description">
+        <p>EventBreakpoints permits setting breakpoints on particular operations and
+events in targets that run JavaScript but do not have a DOM.
+JavaScript execution will stop on these operations as if there was a regular
+breakpoint set.</p>
 
+        
+      </div>
+    
+        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+        <h3>Methods</h3>
+      <div class="toc-link">
+        <a class="monospace" href="#method-removeInstrumentationBreakpoint"><span class="domain-dot">EventBreakpoints.</span>removeInstrumentationBreakpoint</a>
+        
+      </div>
+      
+      <div class="toc-link">
+        <a class="monospace" href="#method-setInstrumentationBreakpoint"><span class="domain-dot">EventBreakpoints.</span>setInstrumentationBreakpoint</a>
+        
+      </div>
+      
+        
+        
+      </div>
+
+      
+      <h3 id="methods">Methods</h3>
+      <div>
+        
+      <div class="details">
+        <h4 class="details-name monospace" id="method-removeInstrumentationBreakpoint">
+          <span class="domain-dot">EventBreakpoints.</span>removeInstrumentationBreakpoint
+          
+          <a href="#method-removeInstrumentationBreakpoint"
+             class="permalink"
+             data-slug="EventBreakpoints.removeInstrumentationBreakpoint"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>Removes breakpoint on particular native event.</p>
+
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          eventName
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>Instrumentation name to stop on.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="method-setInstrumentationBreakpoint">
+          <span class="domain-dot">EventBreakpoints.</span>setInstrumentationBreakpoint
+          
+          <a href="#method-setInstrumentationBreakpoint"
+             class="permalink"
+             data-slug="EventBreakpoints.setInstrumentationBreakpoint"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>Sets breakpoint on particular native event.</p>
+
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          eventName
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>Instrumentation name to stop on.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      </div>
+    
+      
+      
+    </div>
+    
       </div>
     </section>
   </main>
