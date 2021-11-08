@@ -144,6 +144,11 @@
       </div>
       
       <div class="toc-link">
+        <a class="monospace" href="#method-getRootAXNode"><span class="domain-dot">Accessibility.</span>getRootAXNode</a>
+        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+      </div>
+      
+      <div class="toc-link">
         <a class="monospace" href="#method-queryAXTree"><span class="domain-dot">Accessibility.</span>queryAXTree</a>
         <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
       </div>
@@ -514,6 +519,68 @@ If omited, the root frame is used.</p>
         <p>The <code>Accessibility.AXNode</code> for this DOM node, if it exists, plus its ancestors, siblings and
 children, if requested.</p>
 
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="method-getRootAXNode">
+          <span class="domain-dot">Accessibility.</span>getRootAXNode
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+          <a href="#method-getRootAXNode"
+             class="permalink"
+             data-slug="Accessibility.getRootAXNode"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>Fetches the root node.
+Requires <code>enable()</code> to have been called previously.</p>
+
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace optional">
+          frameId
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Page/#type-FrameId class="param-type">Page.FrameId</a>
+          
+      <div class="details-description">
+        <p>The frame in whose document the node resides.
+If omitted, the root frame is used.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      <h5 class="properties-name">Return Object</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          node
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Accessibility/#type-AXNode class="param-type">AXNode</a>
+          
+      <div class="details-description">
+        
         
       </div>
     
