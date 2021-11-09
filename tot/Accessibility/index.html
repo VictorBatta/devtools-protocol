@@ -129,6 +129,11 @@
       </div>
       
       <div class="toc-link">
+        <a class="monospace" href="#method-getAXNodeAndAncestors"><span class="domain-dot">Accessibility.</span>getAXNodeAndAncestors</a>
+        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+      </div>
+      
+      <div class="toc-link">
         <a class="monospace" href="#method-getChildAXNodes"><span class="domain-dot">Accessibility.</span>getChildAXNodes</a>
         <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
       </div>
@@ -252,6 +257,97 @@ This turns on accessibility for the page, which can impact performance until acc
         
         
         
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="method-getAXNodeAndAncestors">
+          <span class="domain-dot">Accessibility.</span>getAXNodeAndAncestors
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+          <a href="#method-getAXNodeAndAncestors"
+             class="permalink"
+             data-slug="Accessibility.getAXNodeAndAncestors"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>Fetches a node and all ancestors up to and including the root.
+Requires <code>enable()</code> to have been called previously.</p>
+
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace optional">
+          nodeId
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/DOM/#type-NodeId class="param-type">DOM.NodeId</a>
+          
+      <div class="details-description">
+        <p>Identifier of the node to get.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace optional">
+          backendNodeId
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/DOM/#type-BackendNodeId class="param-type">DOM.BackendNodeId</a>
+          
+      <div class="details-description">
+        <p>Identifier of the backend node to get.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace optional">
+          objectId
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Runtime/#type-RemoteObjectId class="param-type">Runtime.RemoteObjectId</a>
+          
+      <div class="details-description">
+        <p>JavaScript object id of the node wrapper to get.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      <h5 class="properties-name">Return Object</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          nodes
+        </dt>
+        <dd>
+          <span class="param-type">array<span class="param-type__array">[ <a href=/devtools-protocol/tot/Accessibility/#type-AXNode class="param-type">AXNode</a> ]</span></span>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
       </div>
     
       <div class="details">
