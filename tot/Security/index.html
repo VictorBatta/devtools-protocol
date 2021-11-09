@@ -146,12 +146,12 @@
       
         <h3>Events</h3>
       <div class="toc-link">
-        <a class="monospace" href="#event-securityStateChanged"><span class="domain-dot">Security.</span>securityStateChanged</a>
-        
+        <a class="monospace" href="#event-certificateError"><span class="domain-dot">Security.</span>certificateError</a>
+        <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
       </div>
       
       <div class="toc-link">
-        <a class="monospace" href="#event-certificateError"><span class="domain-dot">Security.</span>certificateError</a>
+        <a class="monospace" href="#event-securityStateChanged"><span class="domain-dot">Security.</span>securityStateChanged</a>
         <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
       </div>
       
@@ -405,9 +405,83 @@ be handled by the DevTools client and should be answered with <code>handleCertif
       <div>
         
       <div class="details">
+        <h4 class="details-name monospace" id="event-certificateError">
+          <span class="domain-dot">Security.</span>certificateError
+          <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
+          <a href="#event-certificateError"
+             class="permalink"
+             data-slug="Security.certificateError"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>There is a certificate error. If overriding certificate errors is enabled, then it should be
+handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
+certificate error has been allowed internally. Only one client per target should override
+certificate errors at the same time.</p>
+
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          eventId
+        </dt>
+        <dd>
+          <span class="param-type">integer</span>
+          
+      <div class="details-description">
+        <p>The ID of the event.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          errorType
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>The type of the error.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          requestURL
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>The url that was requested.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      <div class="details">
         <h4 class="details-name monospace" id="event-securityStateChanged">
           <span class="domain-dot">Security.</span>securityStateChanged
-          
+          <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
           <a href="#event-securityStateChanged"
              class="permalink"
              data-slug="Security.securityStateChanged"
@@ -415,7 +489,7 @@ be handled by the DevTools client and should be answered with <code>handleCertif
         </h4>
         
       <div class="details-description">
-        <p>The security state of the page changed.</p>
+        <p>The security state of the page changed. No longer being sent.</p>
 
         
       </div>
@@ -499,80 +573,6 @@ empty.</p>
       </div>
     
           <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
-        </dd>
-      
-      </dl>
-    
-        
-      </div>
-    
-      <div class="details">
-        <h4 class="details-name monospace" id="event-certificateError">
-          <span class="domain-dot">Security.</span>certificateError
-          <span class="deprecated" title="Deprecated, please adopt alternative">Deprecated</span>
-          <a href="#event-certificateError"
-             class="permalink"
-             data-slug="Security.certificateError"
-             title="Double click to copy markdown-formatted URL">#</a>
-        </h4>
-        
-      <div class="details-description">
-        <p>There is a certificate error. If overriding certificate errors is enabled, then it should be
-handled with the <code>handleCertificateError</code> command. Note: this event does not fire if the
-certificate error has been allowed internally. Only one client per target should override
-certificate errors at the same time.</p>
-
-        
-      </div>
-    
-        
-        
-      <h5 class="properties-name">parameters</h5>
-      <dl class="properties-container">
-        
-        <dt class="param-name monospace ">
-          eventId
-        </dt>
-        <dd>
-          <span class="param-type">integer</span>
-          
-      <div class="details-description">
-        <p>The ID of the event.</p>
-
-        
-      </div>
-    
-          
-        </dd>
-      
-        <dt class="param-name monospace ">
-          errorType
-        </dt>
-        <dd>
-          <span class="param-type">string</span>
-          
-      <div class="details-description">
-        <p>The type of the error.</p>
-
-        
-      </div>
-    
-          
-        </dd>
-      
-        <dt class="param-name monospace ">
-          requestURL
-        </dt>
-        <dd>
-          <span class="param-type">string</span>
-          
-      <div class="details-description">
-        <p>The url that was requested.</p>
-
-        
-      </div>
-    
-          
         </dd>
       
       </dl>
