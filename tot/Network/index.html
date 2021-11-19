@@ -372,6 +372,11 @@ file, data and other requests and responses, their headers, bodies, timing, etc.
       </div>
       
       <div class="toc-link">
+        <a class="monospace" href="#event-reportingApiEndpointsChangedForOrigin"><span class="domain-dot">Network.</span>reportingApiEndpointsChangedForOrigin</a>
+        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+      </div>
+      
+      <div class="toc-link">
         <a class="monospace" href="#event-reportingApiReportAdded"><span class="domain-dot">Network.</span>reportingApiReportAdded</a>
         <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
       </div>
@@ -674,6 +679,11 @@ file, data and other requests and responses, their headers, bodies, timing, etc.
       
       <div class="toc-link">
         <a class="monospace" href="#type-ReportId"><span class="domain-dot">Network.</span>ReportId</a>
+        <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+      </div>
+      
+      <div class="toc-link">
+        <a class="monospace" href="#type-ReportingApiEndpoint"><span class="domain-dot">Network.</span>ReportingApiEndpoint</a>
         <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
       </div>
       
@@ -4300,6 +4310,60 @@ or were emitted for this request.</p>
       <div class="details-description">
         <p>Request initiator.</p>
 
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="event-reportingApiEndpointsChangedForOrigin">
+          <span class="domain-dot">Network.</span>reportingApiEndpointsChangedForOrigin
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+          <a href="#event-reportingApiEndpointsChangedForOrigin"
+             class="permalink"
+             data-slug="Network.reportingApiEndpointsChangedForOrigin"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        
+        
+      </div>
+    
+        
+        
+      <h5 class="properties-name">parameters</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          origin
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>Origin of the document(s) which configured the endpoints.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          endpoints
+        </dt>
+        <dd>
+          <span class="param-type">array<span class="param-type__array">[ <a href=/devtools-protocol/tot/Network/#type-ReportingApiEndpoint class="param-type">ReportingApiEndpoint</a> ]</span></span>
+          
+      <div class="details-description">
+        
         
       </div>
     
@@ -8957,6 +9021,61 @@ CORB and streaming.</p>
     
         <p class="type-type">Type: <strong>string</strong></p>
         
+        
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="type-ReportingApiEndpoint">
+          <span class="domain-dot">Network.</span>ReportingApiEndpoint
+          <span class="experimental" title="This may be changed, moved or removed">Experimental</span>
+          <a href="#type-ReportingApiEndpoint"
+             class="permalink"
+             data-slug="Network.ReportingApiEndpoint"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        
+        
+      </div>
+    
+        <p class="type-type">Type: <strong>object</strong></p>
+        
+      <h5 class="properties-name">properties</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          url
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>The URL of the endpoint to which reports may be delivered.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          groupName
+        </dt>
+        <dd>
+          <span class="param-type">string</span>
+          
+      <div class="details-description">
+        <p>Name of the endpoint group.</p>
+
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
         
       </div>
     
