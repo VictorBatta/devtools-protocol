@@ -182,6 +182,16 @@
       </div>
       
       <div class="toc-link">
+        <a class="monospace" href="#type-ClientHintIssueDetails"><span class="domain-dot">Audits.</span>ClientHintIssueDetails</a>
+        
+      </div>
+      
+      <div class="toc-link">
+        <a class="monospace" href="#type-ClientHintIssueReason"><span class="domain-dot">Audits.</span>ClientHintIssueReason</a>
+        
+      </div>
+      
+      <div class="toc-link">
         <a class="monospace" href="#type-ContentSecurityPolicyIssueDetails"><span class="domain-dot">Audits.</span>ContentSecurityPolicyIssueDetails</a>
         
       </div>
@@ -999,6 +1009,83 @@ refinements of the net error BLOCKED_BY_RESPONSE.</p>
       </div>
     
       <div class="details">
+        <h4 class="details-name monospace" id="type-ClientHintIssueDetails">
+          <span class="domain-dot">Audits.</span>ClientHintIssueDetails
+          
+          <a href="#type-ClientHintIssueDetails"
+             class="permalink"
+             data-slug="Audits.ClientHintIssueDetails"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        <p>This issue tracks client hints related issues. It&#39;s used to deprecate old
+features, encourage the use of new ones, and provide general guidance.</p>
+
+        
+      </div>
+    
+        <p class="type-type">Type: <strong>object</strong></p>
+        
+      <h5 class="properties-name">properties</h5>
+      <dl class="properties-container">
+        
+        <dt class="param-name monospace ">
+          sourceCodeLocation
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-SourceCodeLocation class="param-type">SourceCodeLocation</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace ">
+          clientHintIssueReason
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-ClientHintIssueReason class="param-type">ClientHintIssueReason</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+      </dl>
+    
+        
+      </div>
+    
+      <div class="details">
+        <h4 class="details-name monospace" id="type-ClientHintIssueReason">
+          <span class="domain-dot">Audits.</span>ClientHintIssueReason
+          
+          <a href="#type-ClientHintIssueReason"
+             class="permalink"
+             data-slug="Audits.ClientHintIssueReason"
+             title="Double click to copy markdown-formatted URL">#</a>
+        </h4>
+        
+      <div class="details-description">
+        
+        
+      <div class="enum-container">Allowed Values: <code>MetaTagAllowListInvalidOrigin</code>, <code>MetaTagModifiedHTML</code></div>
+    
+      </div>
+    
+        <p class="type-type">Type: <strong>string</strong></p>
+        
+        
+      </div>
+    
+      <div class="details">
         <h4 class="details-name monospace" id="type-ContentSecurityPolicyIssueDetails">
           <span class="domain-dot">Audits.</span>ContentSecurityPolicyIssueDetails
           
@@ -1624,7 +1711,7 @@ optional fields in InspectorIssueDetails to convey more specific
 information about the kind of issue.</p>
 
         
-      <div class="enum-container">Allowed Values: <code>SameSiteCookieIssue</code>, <code>MixedContentIssue</code>, <code>BlockedByResponseIssue</code>, <code>HeavyAdIssue</code>, <code>ContentSecurityPolicyIssue</code>, <code>SharedArrayBufferIssue</code>, <code>TrustedWebActivityIssue</code>, <code>LowTextContrastIssue</code>, <code>CorsIssue</code>, <code>AttributionReportingIssue</code>, <code>QuirksModeIssue</code>, <code>NavigatorUserAgentIssue</code>, <code>WasmCrossOriginModuleSharingIssue</code>, <code>GenericIssue</code>, <code>DeprecationIssue</code></div>
+      <div class="enum-container">Allowed Values: <code>SameSiteCookieIssue</code>, <code>MixedContentIssue</code>, <code>BlockedByResponseIssue</code>, <code>HeavyAdIssue</code>, <code>ContentSecurityPolicyIssue</code>, <code>SharedArrayBufferIssue</code>, <code>TrustedWebActivityIssue</code>, <code>LowTextContrastIssue</code>, <code>CorsIssue</code>, <code>AttributionReportingIssue</code>, <code>QuirksModeIssue</code>, <code>NavigatorUserAgentIssue</code>, <code>WasmCrossOriginModuleSharingIssue</code>, <code>GenericIssue</code>, <code>DeprecationIssue</code>, <code>ClientHintIssue</code></div>
     
       </div>
     
@@ -1857,6 +1944,20 @@ add a new optional field to this type.</p>
         </dt>
         <dd>
           <a href=/devtools-protocol/tot/Audits/#type-DeprecationIssueDetails class="param-type">DeprecationIssueDetails</a>
+          
+      <div class="details-description">
+        
+        
+      </div>
+    
+          
+        </dd>
+      
+        <dt class="param-name monospace optional">
+          clientHintIssueDetails
+        </dt>
+        <dd>
+          <a href=/devtools-protocol/tot/Audits/#type-ClientHintIssueDetails class="param-type">ClientHintIssueDetails</a>
           
       <div class="details-description">
         
